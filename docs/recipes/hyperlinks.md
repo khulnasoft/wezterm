@@ -52,7 +52,7 @@ wezterm.on('open-uri', function(window, pane, uri)
       if success then
         if stdout:find('directory') then
           pane:send_text(wezterm.shell_join_args({ 'cd', url.file_path }) .. '\r')
-          pane:send_text(wezterm.shell_join_args({ 'ls', '-a', '-p', '--group-directories-first' }) .. '\r')
+          pane:send_text(wezterm.shell_join_args({ 'ls', '-a', '-p', '--hyperlink', '--group-directories-first' }) .. '\r')
           return false
         end
 
