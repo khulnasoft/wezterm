@@ -893,6 +893,10 @@ fn default_ulimit_nproc() -> u64 {
     2048
 }
 
+fn default_wayland_scroll_factor() -> f64 {
+     1.0
+}
+
 impl Default for Config {
     fn default() -> Self {
         // Ask FromDynamic to provide the defaults based on the attributes
