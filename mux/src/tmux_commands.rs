@@ -36,7 +36,7 @@ pub(crate) struct PaneItem {
     pane_top: u64,
     pane_active: bool,
     pane_mouse_any: bool,
-    pane_mouse_buttton: bool,
+    pane_mouse_button: bool,
 }
 
 #[derive(Debug)]
