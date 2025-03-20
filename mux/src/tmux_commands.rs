@@ -764,7 +764,7 @@ impl TmuxCommand for ListAllPanes {
 
             let pane_mouse_buttton = fields
                 .next()
-                .ok_or_else(|| anyhow!("missing pane_button_flag"))?
+                .ok_or_else(|| anyhow!("missing pane_mouse_button_flag"))?
                 .parse::<usize>()?;
             let pane_mouse_buttton = pane_mouse_buttton == 1;
 
